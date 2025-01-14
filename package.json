@@ -2,7 +2,13 @@
   "name": "js-automation-demo-with-ai",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx cucumber-js",
+    "test:tag": "npx cucumber-js --tags @sep11",
+    "test:smoke": "npx cucumber-js --tags @smoke",
+    "Mac-open:report": "open reports/cucumber-report.html",
+    "Windows-open:report": "start reports/cucumber-report.html"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
