@@ -4,7 +4,9 @@ import { startApplicationPage, page } from "../../globalPagesSetup.js";
 import { productInfo } from "../../utilities/qa-data-reader.js";
 
 
-Given('user is on the enrollment page', function () {
+Given('user is on the enrollment page', async function () {
+    //login using startApplicationPage
+    await startApplicationPage.login();
 });
 
 Then('the program start date is displayed', function () {
