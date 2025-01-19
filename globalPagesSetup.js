@@ -7,8 +7,12 @@ import { StartApplicationPage } from "./pages/StartApplicationPage.js";
  */
 export let startApplicationPage;
 
-
+/**
+ * @type {import('playwright').Page}
+ */
+export let page;
 // ADD OTHER PAGE CLASS REFERENCES HERE...
+
 
 /**
  * Initializes the global page elements and instances for the automation framework.
@@ -19,7 +23,7 @@ export let startApplicationPage;
 export const initElements = (argPage) => {
     page = argPage;
     startApplicationPage = new StartApplicationPage(page);
-    
+
     // INITIALIZE PAGE INSTANCES HERE...
 
 
