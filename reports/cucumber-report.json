@@ -1,0 +1,160 @@
+[
+  {
+    "description": "    As a customer, I want to see the program start dates and refund policy details before enrolling\n    so that I can make informed decisions.",
+    "elements": [
+      {
+        "description": "",
+        "id": "program-start-dates-and-refund-dates;verify-that-the-program-start-date-and-refund-date-are-displayed",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify that the program start date and refund date are displayed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1302397899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "user is on the enrollment page",
+            "match": {
+              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\startAndRefundDates.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3281983600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the program start date is displayed",
+            "match": {
+              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\startAndRefundDates.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33735999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the program refund date is displayed",
+            "match": {
+              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\startAndRefundDates.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7205199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 286520099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sep11",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "program-start-dates-and-refund-dates;verify-that-the-program-start-date-and-refund-dates-are-correct",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Verify that the program start date and refund dates are correct",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1270095100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "user is on the enrollment page",
+            "match": {
+              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\startAndRefundDates.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5309525999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "the displayed program start date is correct",
+            "match": {
+              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\startAndRefundDates.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31641299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the displayed program refund date is correct",
+            "match": {
+              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\startAndRefundDates.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7304899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 284182100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sep11",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "program-start-dates-and-refund-dates",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Program start dates and Refund dates",
+    "tags": [
+      {
+        "name": "@sep11",
+        "line": 1
+      }
+    ],
+    "uri": "features\\getting-started\\StartAndRefundDates.feature"
+  }
+]
