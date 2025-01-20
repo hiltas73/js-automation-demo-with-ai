@@ -1,4 +1,5 @@
 import { StartApplicationPage } from "./pages/StartApplicationPage.js";
+import { ReviewPaymentPage } from "./pages/ReviewPaymentPage.js";
 
 // Import OTHER PAGES CLASSES HERE...
 
@@ -11,6 +12,12 @@ export let startApplicationPage;
  * @type {import('playwright').Page}
  */
 export let page;
+
+/**
+ * @type {import('./pages/ReviewPaymentPage.js').ReviewPaymentPage}
+ */
+export let reviewPaymentPage;
+
 // ADD OTHER PAGE CLASS REFERENCES HERE...
 
 
@@ -23,7 +30,7 @@ export let page;
 export const initElements = (argPage) => {
     page = argPage;
     startApplicationPage = new StartApplicationPage(page);
-
+    reviewPaymentPage = new ReviewPaymentPage(page);
     // INITIALIZE PAGE INSTANCES HERE...
 
 
