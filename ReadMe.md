@@ -101,11 +101,17 @@ A CommonJS configuration file for CucumberJS, managing settings for BDD-style au
 The package.json file for the "js-automation-demo-with-ai" project includes several key sections:
 
 name: Identifies the project as "js-automation-demo-with-ai".
+
 version: Marks the current version at "1.0.0".
+
 main: Points to the main entry file of the project, "index.js".
+
 scripts: Defines custom scripts for the project.
+
 dependencies: Lists project dependencies, including Cucumber, Playwright for testing, and dotenv for environment variable management.
+
 type: Specifies the module system, set to "module" for ES Module support.
+
 This setup facilitates BDD-style testing with CucumberJS and Playwright, and includes cross-platform support for viewing test reports.
 
 
