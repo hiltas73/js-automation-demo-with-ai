@@ -21,6 +21,7 @@ In this project, I utilized JavaScript along with Tabnine AI and Perplexity AI, 
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Framework Structure and Usage](#framework-structure-and-usage)
+- [Code Generation with Tabnine AI](#code-generation-with-tabnine-ai)
 - [Running Tests](#running-tests)
 - [Contributing](#contributing)
 - [Author](#author)
@@ -114,6 +115,107 @@ type: Specifies the module system, set to "module" for ES Module support.
 
 This setup facilitates BDD-style testing with CucumberJS and Playwright, and includes cross-platform support for viewing test reports.
 
+## Code Generation with Tabnine AI
+
+The majority of the code in this file has been generated using Tabnine AI. To utilize this feature, simply type your code after the `//` symbol and press Enter. Tabnine will then provide code suggestions, which you can accept by pressing the Tab key. Here are the examples:
+
+1. [clickNextButton.js step definition file:](steps\getting-started\clickNextButton.js)
+```
+import { Then, When } from "@cucumber/cucumber";
+import { expect } from "@playwright/test";
+import { startApplicationPage, page, paymentPlanPage } from "../../globalPagesSetup.js";
+
+When('user enters first name', async function () {
+await startApplicationPage.firstNameInputBox.fill("John");
+});
+
+When('user enters last name', async function () {
+// enter last name
+await startApplicationPage.lastNameInputBox.fill("Doe");
+});
+
+When('user enters email address', async function () {
+// enter email address
+await startApplicationPage.emailInputBox.fill("johndoe@example.com");
+});
+
+When('user enters phone number', async function () {
+// enter phone number
+await startApplicationPage.phoneNumberInputBox.fill("1234567890");
+});
+
+When('user select how heard about us', async function () {
+// select how heard about us option as email
+await startApplicationPage.howDidYouHearAboutUsDropDown.click();
+await startApplicationPage.emailOptionFromDropDown.click();
+});
+
+When('user clicks on Next button', async function () {
+// click on the button based on the provided string
+await startApplicationPage.nextButton.click();
+});
+
+Then('user should be on Payment plan page', async function () {
+// verify that user is on the Payment plan page
+await expect(paymentPlanPage.chooseAPaymentPlanText).toBeVisible();
+// wait 2 seconds for visual confirmation
+await page.waitForTimeout(2000);
+});
+```
+
+2. [startAndRefundDates.js step definition file:](steps\getting-started\startAndRefundDates.js)
+
+```
+import { Given, Then, When } from "@cucumber/cucumber";
+import { expect } from "@playwright/test";
+import { startApplicationPage, page } from "../../globalPagesSetup.js";
+import { productInfo } from "../../utilities/qa-data-reader.js";
+
+
+Given('user is on the enrollment page', async function () {
+    // login using startApplicationPage
+    await startApplicationPage.login();
+});
+
+Then('the program start date is displayed', async function () {
+    // assert that the program start date is visible on the page using the locators in startApplicationPage
+    await expect(startApplicationPage.programStartDate).toBeVisible();
+
+});
+
+Then('the program refund date is displayed', async function () {
+    // assert that the program refund date is visible on the page using the locators in startApplicationPage
+    await expect(startApplicationPage.refundEndDate).toBeVisible();
+
+});
+
+Then('the displayed program start date is correct', async function () {
+    // get the actual program start date from the UI using the locators in startApplicationPage
+    const ACTUAL_START_DATE = await startApplicationPage.programStartDate.innerText();
+    // get the expected start date from the qa_data.json file
+    const EXPECTED_START_DATE = productInfo.startDate;
+    // assert that the actual start date matches the expected start date
+    expect(ACTUAL_START_DATE).toBe(EXPECTED_START_DATE);
+    // print the actual start date
+    console.log(`Actual start date: ${ACTUAL_START_DATE}`);
+    // print the expected start date
+    console.log(`Expected start date: ${EXPECTED_START_DATE}`);
+
+});
+
+Then('the displayed program refund date is correct', async function () {
+    // get the actual program refund date from the UI using the locators in startApplicationPage
+    const ACTUAL_REFUND_DATE = await startApplicationPage.refundEndDate.innerText();
+    // get the expected refund date from the qa_data.json file
+    const EXPECTED_REFUND_DATE = productInfo.refundDate;
+    // assert that the actual refund date matches the expected refund date
+    expect(ACTUAL_REFUND_DATE).toBe(EXPECTED_REFUND_DATE);
+// print the actual refund date
+console.log(`Actual refund date: ${ACTUAL_REFUND_DATE}`);
+// print the expected refund date
+console.log(`Expected refund date: ${EXPECTED_REFUND_DATE}`);
+});
+```
 
 ## Running Tests
 
