@@ -21,8 +21,7 @@ As a customer, I should be able to see payment plan options in Step 2.
 
 #TODO: Create scenarios that cover all the acceptance criteria
 
-@sep17
+Background:
+    Given user is on the enrollment page
+
 Scenario: Upfront payment is selected
-Given I am on the Checkout page
-And I am logged in as a customer
-And I am on the Step 2 page

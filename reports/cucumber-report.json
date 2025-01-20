@@ -1,130 +1,124 @@
 [
   {
-    "description": "    As a customer, I want to see the program start dates and refund policy details before enrolling\n    so that I can make informed decisions.",
+    "description": "As a customer, I should be able to click on the next button on step 1 when I give valid information.",
     "elements": [
       {
         "description": "",
-        "id": "program-start-dates-and-refund-dates;verify-that-the-program-start-date-and-refund-date-are-displayed",
+        "id": "click-on-the-next-button-on-step-1;test-by-providing-all-the-required-fields",
         "keyword": "Scenario",
-        "line": 15,
-        "name": "Verify that the program start date and refund date are displayed",
+        "line": 16,
+        "name": "Test by providing all the required fields",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1302397899
+              "duration": 1290482400
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 13,
+            "line": 14,
             "name": "user is on the enrollment page",
             "match": {
               "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\startAndRefundDates.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 3281983600
+              "duration": 5875676599
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "the program start date is displayed",
-            "match": {
-              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\startAndRefundDates.js:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 33735999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
+            "keyword": "When ",
             "line": 17,
-            "name": "the program refund date is displayed",
+            "name": "user enters first name",
             "match": {
-              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\startAndRefundDates.js:18"
+              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 7205199
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 286520099
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@sep11",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "program-start-dates-and-refund-dates;verify-that-the-program-start-date-and-refund-dates-are-correct",
-        "keyword": "Scenario",
-        "line": 19,
-        "name": "Verify that the program start date and refund dates are correct",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1270095100
+              "duration": 54765799
             }
           },
           {
             "arguments": [],
-            "keyword": "Given ",
-            "line": 13,
-            "name": "user is on the enrollment page",
+            "keyword": "And ",
+            "line": 18,
+            "name": "user enters last name",
             "match": {
-              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\startAndRefundDates.js:7"
+              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 5309525999
+              "duration": 33357700
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
+            "line": 19,
+            "name": "user enters email address",
+            "match": {
+              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34158499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
             "line": 20,
-            "name": "the displayed program start date is correct",
+            "name": "user enters phone number",
             "match": {
-              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\startAndRefundDates.js:24"
+              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 31641299
+              "duration": 33857099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "user select how heard about us",
+            "match": {
+              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 295797800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "user clicks on Next button",
+            "match": {
+              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70452999
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 21,
-            "name": "the displayed program refund date is correct",
+            "line": 23,
+            "name": "user should be on Payment plan page",
             "match": {
-              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\startAndRefundDates.js:38"
+              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 7304899
+              "duration": 2406148400
             }
           },
           {
@@ -132,29 +126,29 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 284182100
+              "duration": 304126000
             }
           }
         ],
         "tags": [
           {
-            "name": "@sep11",
+            "name": "@wip",
             "line": 1
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "program-start-dates-and-refund-dates",
+    "id": "click-on-the-next-button-on-step-1",
     "line": 2,
     "keyword": "Feature",
-    "name": "Program start dates and Refund dates",
+    "name": "Click on the next button on step 1",
     "tags": [
       {
-        "name": "@sep11",
+        "name": "@wip",
         "line": 1
       }
     ],
-    "uri": "features\\getting-started\\StartAndRefundDates.feature"
+    "uri": "features\\getting-started\\ClickNextButton.feature"
   }
 ]
