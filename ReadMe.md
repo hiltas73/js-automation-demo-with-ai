@@ -120,7 +120,8 @@ This setup facilitates BDD-style testing with CucumberJS and Playwright, and inc
 The majority of the code in this file has been generated using Tabnine AI. To utilize this feature, simply type your code after the `//` symbol and press Enter. Tabnine will then provide code suggestions, which you can accept by pressing the Tab key. Here are the examples:
 
 1. [clickNextButton.js step definition file:](steps\getting-started\clickNextButton.js)
-```
+
+```javascript
 import { Then, When } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
 import { startApplicationPage, page, paymentPlanPage } from "../../globalPagesSetup.js";
@@ -165,7 +166,7 @@ await page.waitForTimeout(2000);
 
 2. [startAndRefundDates.js step definition file:](steps\getting-started\startAndRefundDates.js)
 
-```
+```javascript
 import { Given, Then, When } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
 import { startApplicationPage, page } from "../../globalPagesSetup.js";
