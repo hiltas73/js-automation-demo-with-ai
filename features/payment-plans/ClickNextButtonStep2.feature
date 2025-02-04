@@ -12,13 +12,13 @@ As a customer, I should be able to click on the next button on step 2 when I sel
 #* AC7: By default, the pay button should be displayed.
 
 
-#Background:
-#    Given user is on the enrollment page
-#    And user has completed step one with valid information
-#    And user is on step two of the enrollment process
+Background:
+    Given user is on the enrollment page
+    And user has completed step one with valid information
+    And user is on step two of the enrollment process
 
 
 #TODO: Create scenarios that cover all the acceptance criteria
-
-
-Scenario: Clicking on the next button with valid payment information
+@wip
+Scenario: verify that the next button is disabled by default
+    Then the next button is disabled by default

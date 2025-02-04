@@ -21,7 +21,7 @@ Scenario: Test by providing all the required fields
     And user select how heard about us
     And user clicks on Next button
     Then user should be on Payment plan page
-@wip
+
 Scenario: Test by providing only the required fields
     Given user enters first name
     And user enters last name

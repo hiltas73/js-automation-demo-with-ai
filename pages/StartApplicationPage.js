@@ -92,4 +92,17 @@ export class StartApplicationPage extends BasePage {
         this.discountedPrice = page.locator("//b[@class='info-primary']");
         this.originalPrice = page.locator("//s[contains(.,'$')]");
     }
+
+    // create a function named "fillInStartApplicationForm()" to fill in the first name, last name, email address, phone number and click on Next button on the StartApplicationPage
+    async fillInStartApplicationForm() {
+        await this.firstNameInputBox.fill("John");
+        await this.lastNameInputBox.fill("Doe");
+        await this.emailInputBox.fill("johndoe@example.com");
+        await this.phoneNumberInputBox.fill("1234567890");
+        // wait 2 seconds for visual confirmation
+        await this.page.waitForTimeout(2000);
+        // click on Next button
+        await this.nextButton.click();
+    }
+
 }

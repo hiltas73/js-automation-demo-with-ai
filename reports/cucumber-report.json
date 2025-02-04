@@ -1,111 +1,72 @@
 [
   {
-    "description": "As a customer, I should be able to click on the next button on step 1 when I give valid information.",
+    "description": "As a customer, I should be able to click on the next button on step 2 when I select a plan.",
     "elements": [
       {
         "description": "",
-        "id": "click-on-the-next-button-on-step-1;test-by-providing-only-the-required-fields",
+        "id": "click-on-the-next-button-on-payment-plans-page---#!-test-only;verify-that-the-next-button-is-disabled-by-default",
         "keyword": "Scenario",
-        "line": 25,
-        "name": "Test by providing only the required fields",
+        "line": 23,
+        "name": "verify that the next button is disabled by default",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2905372900
+              "duration": 1452750700
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 14,
+            "line": 16,
             "name": "user is on the enrollment page",
             "match": {
               "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\startAndRefundDates.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 3318556699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 26,
-            "name": "user enters first name",
-            "match": {
-              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 48477399
+              "duration": 3437929400
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 27,
-            "name": "user enters last name",
+            "line": 17,
+            "name": "user has completed step one with valid information",
             "match": {
-              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:10"
+              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\payment-plans\\ClickNextButtonStep2.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 65912099
+              "duration": 2195430100
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 28,
-            "name": "user enters email address",
+            "line": 18,
+            "name": "user is on step two of the enrollment process",
             "match": {
-              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:15"
+              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\payment-plans\\ClickNextButtonStep2.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 26820699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "user enters phone number",
-            "match": {
-              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 41647600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "user clicks on Next button",
-            "match": {
-              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 58049699
+              "duration": 2401487600
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 31,
-            "name": "user should be on Payment plan page",
+            "line": 24,
+            "name": "the next button is disabled by default",
             "match": {
-              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:36"
+              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\payment-plans\\ClickNextButtonStep2.js:19"
             },
             "result": {
               "status": "passed",
-              "duration": 2906950600
+              "duration": 2030259700
             }
           },
           {
@@ -113,24 +74,33 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 330289899
+              "duration": 411613400
             }
           }
         ],
         "tags": [
           {
+            "name": "@sep16",
+            "line": 1
+          },
+          {
             "name": "@wip",
-            "line": 24
+            "line": 22
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "click-on-the-next-button-on-step-1",
+    "id": "click-on-the-next-button-on-payment-plans-page---#!-test-only",
     "line": 2,
     "keyword": "Feature",
-    "name": "Click on the next button on step 1",
-    "tags": [],
-    "uri": "features\\getting-started\\ClickNextButton.feature"
+    "name": "Click on the next button on payment plans page   #! Test Only",
+    "tags": [
+      {
+        "name": "@sep16",
+        "line": 1
+      }
+    ],
+    "uri": "features\\payment-plans\\ClickNextButtonStep2.feature"
   }
 ]
