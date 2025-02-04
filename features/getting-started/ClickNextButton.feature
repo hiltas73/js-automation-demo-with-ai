@@ -1,4 +1,4 @@
-@wip
+
 Feature: Click on the next button on step 1
 
 As a customer, I should be able to click on the next button on step 1 when I give valid information.
@@ -19,5 +19,13 @@ Scenario: Test by providing all the required fields
     And user enters email address
     And user enters phone number
     And user select how heard about us
+    And user clicks on Next button
+    Then user should be on Payment plan page
+@wip
+Scenario: Test by providing only the required fields
+    Given user enters first name
+    And user enters last name
+    And user enters email address
+    And user enters phone number
     And user clicks on Next button
     Then user should be on Payment plan page
