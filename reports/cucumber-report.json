@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "click-on-the-next-button-on-step-1;test-by-providing-all-the-required-fields",
+        "id": "click-on-the-next-button-on-step-1;test-by-providing-only-the-required-fields",
         "keyword": "Scenario",
-        "line": 16,
-        "name": "Test by providing all the required fields",
+        "line": 25,
+        "name": "Test by providing only the required fields",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1290482400
+              "duration": 2905372900
             }
           },
           {
@@ -27,98 +27,85 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5875676599
+              "duration": 3318556699
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
-            "line": 17,
+            "keyword": "Given ",
+            "line": 26,
             "name": "user enters first name",
             "match": {
               "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 54765799
+              "duration": 48477399
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 18,
+            "line": 27,
             "name": "user enters last name",
             "match": {
               "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 33357700
+              "duration": 65912099
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
+            "line": 28,
             "name": "user enters email address",
             "match": {
               "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 34158499
+              "duration": 26820699
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 20,
+            "line": 29,
             "name": "user enters phone number",
             "match": {
               "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 33857099
+              "duration": 41647600
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
-            "name": "user select how heard about us",
-            "match": {
-              "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 295797800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
+            "line": 30,
             "name": "user clicks on Next button",
             "match": {
               "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:31"
             },
             "result": {
               "status": "passed",
-              "duration": 70452999
+              "duration": 58049699
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 23,
+            "line": 31,
             "name": "user should be on Payment plan page",
             "match": {
               "location": "file:\\C:\\Users\\LENOVO\\Desktop\\VS%20Code%20Projects\\js-automation-demo-with-ai\\steps\\getting-started\\clickNextButton.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 2406148400
+              "duration": 2906950600
             }
           },
           {
@@ -126,14 +113,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 304126000
+              "duration": 330289899
             }
           }
         ],
         "tags": [
           {
             "name": "@wip",
-            "line": 1
+            "line": 24
           }
         ],
         "type": "scenario"
@@ -143,12 +130,7 @@
     "line": 2,
     "keyword": "Feature",
     "name": "Click on the next button on step 1",
-    "tags": [
-      {
-        "name": "@wip",
-        "line": 1
-      }
-    ],
+    "tags": [],
     "uri": "features\\getting-started\\ClickNextButton.feature"
   }
 ]
