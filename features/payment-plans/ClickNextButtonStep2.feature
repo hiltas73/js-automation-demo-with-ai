@@ -34,7 +34,8 @@ Scenario: verify that the next button will be activated when user selects instal
     Then the next button is enabled
 
 @wip
-Scenario: verify that when user clicks the next button, Step 3 page should be displayed
+Scenario: verify that when user clicks the next button after payment selection, Step 3 page should be displayed
+    When user selects upfront payment option
     When user clicks the next button
     Then the step 3 page is displayed
 

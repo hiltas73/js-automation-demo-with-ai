@@ -1,6 +1,6 @@
 import { Given, When, Then } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
-import { startApplicationPage, page, paymentPlanPage } from "../../globalPagesSetup.js";
+import { startApplicationPage, page, paymentPlanPage, reviewPaymentPage } from "../../globalPagesSetup.js";
 
 Given('user has completed step one with valid information', async function () {
     // fill in the first name, last name, emailling address, phone number and click on Next button on the StartApplicationPage
@@ -46,4 +46,21 @@ When('user selects installments payment option', async function () {
     // wait 2 seconds for visual confirmation
     await page.waitForTimeout(2000);
 });
+
+When('user clicks the next button', async function () {
+    // user clicks on the activated next button on the PaymentPlanPage
+    await paymentPlanPage.activeNextButton.click();
+    // wait 2 seconds for visual confirmation
+    await page.waitForTimeout(2000);
+
+});
+
+Then('the step {int} page is displayed', async function (int) {
+    // verify that the step 3 ReviewPaymentPage is displayed by verifying paymentForm is visible
+    await expect(reviewPaymentPage.paymentForm).toBeVisible();
+    // wait 2 seconds for visual confirmation
+    await page.waitForTimeout(2000);
+ });
+
+
 
