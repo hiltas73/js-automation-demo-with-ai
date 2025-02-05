@@ -84,6 +84,11 @@ export class ReviewPaymentPage extends BasePage {
         this.termsAgreementTextPop = page.locator(
             "//h1[@id='mat-mdc-dialog-title-0']"
         );
+        this.step1 = page.locator("(//div[@class='step-circle'])[1]");
+
+        this.step2 = page.locator("(//div[@class='step-circle'])[2]");
+
+        this.step3 = page.locator("(//div[@class='step-circle'])[3]");
     }
 
 }

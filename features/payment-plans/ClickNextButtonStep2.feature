@@ -33,11 +33,14 @@ Scenario: verify that the next button will be activated when user selects instal
     When user selects installments payment option
     Then the next button is enabled
 
-@wip
+
 Scenario: verify that when user clicks the next button after payment selection, Step 3 page should be displayed
     When user selects upfront payment option
     When user clicks the next button
     Then the step 3 page is displayed
 
-
-Scenario: verify that the stepper shows steps 1, 2, and 3
+@wip
+Scenario: verify that in the stepper, steps 1 and 2 should be green, and step 3 should be blue
+    When user selects upfront payment option
+    When user clicks the next button
+    Then the stepper displays steps 1 and 2 as green, and step 3 as blue
