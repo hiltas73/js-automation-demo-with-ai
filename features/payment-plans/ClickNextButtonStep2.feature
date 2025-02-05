@@ -19,6 +19,24 @@ Background:
 
 
 #TODO: Create scenarios that cover all the acceptance criteria
-@wip
+
 Scenario: verify that the next button is disabled by default
     Then the next button is disabled by default
+
+
+Scenario: verify that the next button will be activated when user selects upfront payment option
+    When user selects upfront payment option
+    Then the next button is enabled
+
+
+Scenario: verify that the next button will be activated when user selects installments payment option
+    When user selects installments payment option
+    Then the next button is enabled
+
+@wip
+Scenario: verify that when user clicks the next button, Step 3 page should be displayed
+    When user clicks the next button
+    Then the step 3 page is displayed
+
+
+Scenario: verify that the stepper shows steps 1, 2, and 3

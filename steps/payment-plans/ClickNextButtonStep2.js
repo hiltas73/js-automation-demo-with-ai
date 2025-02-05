@@ -1,4 +1,4 @@
-import { Given, Then } from "@cucumber/cucumber";
+import { Given, When, Then } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
 import { startApplicationPage, page, paymentPlanPage } from "../../globalPagesSetup.js";
 
@@ -23,3 +23,27 @@ Then('the next button is disabled by default', async function () {
     await page.waitForTimeout(2000);
  
 });
+
+When('user selects upfront payment option', async function () {
+    // select the upfront payment option on the PaymentPlanPage
+    await paymentPlanPage.upfrontPaymentFrame.click();
+    // wait 2 seconds for visual confirmation
+    await page.waitForTimeout(2000);
+ 
+});
+
+Then('the next button is enabled', async function () {
+    // verify that the nextButton in PaymentPlanPage is enabled
+    await expect(paymentPlanPage.activeNextButton).toBeEnabled();
+    // wait 2 seconds for visual confirmation
+    await page.waitForTimeout(2000);
+ 
+});
+
+When('user selects installments payment option', async function () {
+    // select the installments payment option on the PaymentPlanPage
+    await paymentPlanPage.installmentsPaymentFrame.click();
+    // wait 2 seconds for visual confirmation
+    await page.waitForTimeout(2000);
+});
+
